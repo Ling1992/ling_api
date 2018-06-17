@@ -14,3 +14,12 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+
+$router->post('ling/57BigCat/insertXS', ['uses'=>'BigCat\IndexController@insertXS']);
+
+
+$router->get('ling/test','TestController@index');
+
+$router->get('ling/test/testGetXS', 'TestController@testGetXS');
+
